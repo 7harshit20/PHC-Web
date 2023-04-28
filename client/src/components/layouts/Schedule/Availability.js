@@ -23,6 +23,7 @@ const Availability = () => {
             No Doctors available at the moment.
           </div>
         ) : (
+          <div style={{display:'block',overflowX:'auto'}}>
           <table
             class='table text-center'
             style={{ width: "80%", margin: "auto" }}
@@ -46,6 +47,7 @@ const Availability = () => {
               })}
             </tbody>
           </table>
+          </div>
         )
       ) : null}
     </div>

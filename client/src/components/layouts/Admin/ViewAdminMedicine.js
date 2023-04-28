@@ -67,7 +67,7 @@ const ViewAdminMedicine = () => {
   }, [action, sortQuantity, selectedOption]);
   return (
     <div class='container-xl px-4'>
-      <div style={{ width: "40%", margin: "auto" }}>
+      <div style={{ width: "280px", margin: "auto" }}>
         <Select
           options={medOptions}
           placeholder='Search medicine...'
@@ -101,7 +101,7 @@ const ViewAdminMedicine = () => {
           Sort By Date
         </button>
       </div>
-
+      <div style={{display:'block',overflowX:'auto'}}>
       <table
         class='table my-3 text-center'
         style={{ width: "80%", margin: "auto" }}
@@ -131,6 +131,7 @@ const ViewAdminMedicine = () => {
             : null}
         </tbody>
       </table>
+      </div>
     </div>
   );
 };

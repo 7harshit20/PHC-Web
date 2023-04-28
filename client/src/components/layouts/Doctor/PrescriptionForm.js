@@ -138,7 +138,7 @@ const PrescriptionForm = () => {
                 padding: "1rem",
               }}
             >
-              <div style={{ position: "absolute", left: "0", top: "0.4rem" }}>
+              <div style={{ position: "absolute", left: "0", top: "0.4rem"}}>
                 <button
                   class={`btn ${
                     back === true ? "btn-danger" : "btn-outline-danger"
@@ -150,7 +150,7 @@ const PrescriptionForm = () => {
               </div>
               <div style={{ display: "inline-block" }}>
                 <h5>Prescription Form</h5>
-              </div>{" "}
+              </div>
             </div>
             <div class='card-body'>
               <form>

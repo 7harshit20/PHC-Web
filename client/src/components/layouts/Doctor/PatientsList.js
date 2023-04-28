@@ -34,7 +34,7 @@ const PatientsList = () => {
           type='date'
           value={date}
           onChange={onSetDate}
-          style={{ width: "30%", margin: "auto", textAlign: "center" }}
+          style={{ width: "280px", margin: "auto", textAlign: "center" }}
         />
       </div>
       {allPrescription && allPrescription.length>0? (
