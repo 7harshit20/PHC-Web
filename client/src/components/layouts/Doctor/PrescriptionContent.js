@@ -95,10 +95,10 @@ const PrescriptionContent = (props) => {
                     {data.diagnosis}
                   </p>
                 ) : null}
-                <p>
+                <div style={{display:'block',overflowX:'auto'}}>
                   <strong>Medicines</strong>
                   <br />
-                  <table class='table text-center table-bordered'>
+                  <table class='table text-center table-bordered' >
                     <thead>
                       <tr>
                         <th scope='col'>S.no</th>
@@ -126,7 +126,7 @@ const PrescriptionContent = (props) => {
                       })}
                     </tbody>
                   </table>
-                </p>
+                </div>
                 {data.test ? (
                   <p>
                     <strong>Tests</strong>

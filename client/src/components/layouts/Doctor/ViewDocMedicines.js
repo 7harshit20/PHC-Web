@@ -66,7 +66,7 @@ const ViewDocMedicine = () => {
   }, [action, sortQuantity, selectedOption]);
   return (
     <div class='container-xl px-4'>
-      <div style={{ width: "40%", margin: "auto" }}>
+      <div style={{ width: "300px", margin: "auto" }}>
         <Select
           options={medOptions}
           placeholder='Search stock...'
@@ -100,10 +100,10 @@ const ViewDocMedicine = () => {
           Sort By Date
         </button>
       </div>
-
+      <div style={{display:'blocko',overflowX:'auto'}}>
       <table
         class='table my-3 text-center'
-        style={{ width: "80%", margin: "auto" }}
+        style={{ width: "80%", margin: "auto"}}
       >
         <thead class='table-dark'>
           <tr>
@@ -130,6 +130,7 @@ const ViewDocMedicine = () => {
             : null}
         </tbody>
       </table>
+      </div>
     </div>
   );
 };

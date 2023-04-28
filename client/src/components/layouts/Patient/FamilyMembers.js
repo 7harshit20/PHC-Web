@@ -7,16 +7,16 @@ const FamilyMembers = () => {
   return (
     <div className='container mt-3'>
       <div className="mb-3 text-center">
-      <buttoon
+      <button
         class={`btn ${
           action === "view" ? "btn-info" : "btn-outline-info"
-        } mx-2`}
+        } mx-2 my-2`}
         onClick={() => setAction("view")}
         >
         View Family Members
-      </buttoon>
+      </button>
       <button
-        class={`btn ${action === "add" ? "btn-info" : "btn-outline-info"} mx-2`}
+        class={`btn ${action === "add" ? "btn-info" : "btn-outline-info"} mx-2 my-2`}
         onClick={() => setAction("add")}
         >
         Add New Members

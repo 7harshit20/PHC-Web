@@ -48,6 +48,7 @@ const ReportContent = () => {
         </div>
         <div id='printDiv'>
         <h3 className="mb-5">Medicine Report</h3>
+        <div style={{display:'block',overflowX:'auto'}}>
         <table class='table text-center table-bordered'>
             <thead>
             <tr>
@@ -78,6 +79,7 @@ const ReportContent = () => {
             }):""}
             </tbody>
         </table>
+        </div>
         </div>
     </div>
   )

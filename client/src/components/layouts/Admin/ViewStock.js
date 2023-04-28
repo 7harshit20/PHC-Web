@@ -65,7 +65,7 @@ const ViewStock = () => {
     
   return (
     <div class='container-xl px-4'>
-      <div style={{ width: "40%", margin: "auto" }}>
+      <div style={{ width: "280px", margin: "auto" }}>
         <Select
           options={medOptions}
           placeholder='Search stock...'

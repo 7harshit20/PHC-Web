@@ -25,7 +25,7 @@ const MedicineReport = () => {
        <div className='text-center'>
             <h3>Medicine Report</h3>
          <hr className='mx-4 my-4' />
-         <div style={{ margin: "auto", width: "30%" }}>
+         <div style={{ margin: "auto", width: "300px" }}>
             <label
             className='form-label fw-bold fst-italic'
             style={{ width: "100%", margin: "auto", textAlign: "center" }}

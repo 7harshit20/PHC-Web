@@ -14,7 +14,7 @@ const DoctorsSP = () => {
             User Info
           </button>
         </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
           <div class="accordion-body">
              {isMobile?<DoctorsContentSP isMobile={isMobile}/>:''}
           </div>

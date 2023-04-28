@@ -75,7 +75,7 @@ const AddDoctor = () => {
                   <label class='small mb-1' for='inputAddress'>
                     Set Password
                   </label>
-                  <div class='col-md-6'>
+                  <div class='col-md-6 my-2'>
                     <input
                       onChange={onChange}
                       required={true}
@@ -87,7 +87,7 @@ const AddDoctor = () => {
                       placeholder='Password'
                     />
                   </div>
-                  <div class='col-md-6'>
+                  <div class='col-md-6 my-2'>
                     <input
                       onChange={onChange}
                       required={true}

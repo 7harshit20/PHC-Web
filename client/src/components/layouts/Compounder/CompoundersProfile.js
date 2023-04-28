@@ -174,7 +174,7 @@ const CompoundersProfile = () => {
                   <label class='small mb-1' for='inputAddress'>
                     Update Password
                   </label>
-                  <div class='col-md-4'>
+                  <div class='col-md-4 my-2'>
                     <input
                       type='password'
                       class='form-control'
@@ -186,7 +186,7 @@ const CompoundersProfile = () => {
                       disabled={edit ? 0 : 1}
                     />
                   </div>
-                  <div class='col-md-4'>
+                  <div class='col-md-4 my-2'>
                     <input
                       type='password'
                       class='form-control'
@@ -198,7 +198,7 @@ const CompoundersProfile = () => {
                       disabled={edit ? 0 : 1}
                     />
                   </div>
-                  <div class='col-md-4'>
+                  <div class='col-md-4 my-2'>
                     <input
                       type='password'
                       class='form-control'

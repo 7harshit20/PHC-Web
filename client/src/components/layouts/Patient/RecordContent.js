@@ -82,7 +82,7 @@ const RecordContent = (props) => {
                   <br />
                   {data.diagnosis}
                 </p>:null}
-                <p>
+                <div style={{display:'block',overflowX:'auto'}}>
                   <strong>Medicines</strong>
                   <br />
                   <table class="table text-center table-bordered">
@@ -115,7 +115,7 @@ const RecordContent = (props) => {
                       })}
                     </tbody>
                   </table>
-                </p>
+                  </div>
                 {data.test?<p>
                   <strong>Tests</strong>
                   <br />

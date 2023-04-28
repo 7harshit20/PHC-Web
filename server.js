@@ -34,6 +34,7 @@ app.use(compression({ level: 5 }));
 /**
  * Routes
  */
+app.use("/api/ambulance", require("./routes/ambulance"));
 app.use("/api/register", require("./routes/register"));
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/admin", require("./routes/admin"));

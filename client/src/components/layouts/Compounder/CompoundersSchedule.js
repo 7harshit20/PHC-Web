@@ -68,6 +68,7 @@ const CompoundersSchedule = () => {
   return (
     <>
       <h2 class='text-center'>Your Timings</h2>
+      <div style={{display:'blocko',overflowX:'auto'}}>
       <table
         class='table my-3 text-center'
         style={{ width: "80%", margin: "auto" }}
@@ -251,6 +252,7 @@ const CompoundersSchedule = () => {
           </tr>
         </tbody>
       </table>
+      </div>
       <div
         class='d-grid gap-2'
         style={{ width: "15%", margin: "auto", marginTop: "30px" }}

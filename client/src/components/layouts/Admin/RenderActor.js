@@ -17,7 +17,7 @@ const RenderActor = (props) => {
   }, [actors, actorType]);
 
   return (
-    <div class='card-body'>
+    <div class='card-body' style={{display:'block',overflowX:'auto'}}>
       <table
         class='table my-3 text-center'
         style={{ width: "80%", margin: "auto" }}

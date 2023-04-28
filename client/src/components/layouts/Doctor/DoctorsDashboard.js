@@ -59,7 +59,7 @@ const DoctorsDashboard = () => {
             option === "addRecord" ? "btn-danger" : "btn-outline-danger"
           } mx-2 my-2`}
           onClick={() => setOption("addRecord")}
-          style={{ width: "15%" }}
+          style={{ width: "180px" }}
           >
           Add Record
         </button>
@@ -68,7 +68,7 @@ const DoctorsDashboard = () => {
             option === "checkRecord" ? "btn-danger" : "btn-outline-danger"
           } mx-2 my-2`}
           onClick={() => setOption("checkRecord")}
-          style={{ width: "15%" }}
+          style={{ width: "180px" }}
         >
           Check Record
         </button>
@@ -76,7 +76,7 @@ const DoctorsDashboard = () => {
       {option === "addRecord" ? (
         <div className='text-center'>
           <hr className='mx-4' />
-          <div style={{ margin: "auto", width: "30%" }}>
+          <div style={{ margin: "auto", width: "300px" }}>
             <input
               type='text'
               className='form-control my-4'
@@ -101,7 +101,7 @@ const DoctorsDashboard = () => {
       ) : (
         <div className='text-center'>
           <hr className='mx-4' />
-          <div style={{ margin: "auto", width: "30%" }}>
+          <div style={{ margin: "auto", width: "300px" }}>
             <input
               type='text'
               className='form-control my-4'
