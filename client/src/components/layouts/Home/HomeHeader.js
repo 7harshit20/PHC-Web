@@ -1,6 +1,7 @@
 import React from 'react'
 import { useNavigate,useLocation } from "react-router-dom";
 import InstituteLogo from '../../../images/InstituteLogo.jpg';
+// import './HomeHeader.css';
 const HomeHeader = () => {
   const navigate = useNavigate();
   const location = useLocation();
@@ -93,5 +94,4 @@ const HomeHeader = () => {
     </div>
   );
 }
-
 export default HomeHeader

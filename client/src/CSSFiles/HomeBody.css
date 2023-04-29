@@ -5,25 +5,30 @@
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
 }
+
 .containerStyle{
-   background-color:white;
-   border-radius: 25px;
-   margin:45px;
-   margin-top: 4%;
-   height: 600px;
-   width:550px;
-   padding-left:50px;
-   padding-right:50px;
+  background: #ffffff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffffff, #d9e7ff); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffffff, #d9e7ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 25px;
+  margin:45px;
+  margin-top: 4%;
+  height: 600px;
+  width:550px;
+  padding-left:50px;
+  padding-right:50px;
 }
 
 @media screen and (max-width:700px) {
   .containerStyle{
-    background-color:white;
+    background: #ffffff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #d9e7ff); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #d9e7ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 25px;
     margin:45px;
     height: 600px;
     width:500px;
     padding-left:50px;
     padding-right:50px;
- }
+  }
 }

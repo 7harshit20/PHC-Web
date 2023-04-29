@@ -7,13 +7,11 @@ const { Compounder, validatecompounder } = require("../models/Compounder");
 const { Admin, validateadmin } = require("../models/Admin");
 const { Stock, validateStock } = require("../models/Stock");
 const { Medicine, validateMedicine } = require("../models/Medicine");
-
 // function to check if stock is expired
 const isExpired = (stock) => {
   if (new Date(stock.expiry) <= new Date()) return true;
   return false;
 };
-
 // @route   POST api/admin/addActor/:role
 // @desc    Add Actor
 // @access  Private
@@ -45,7 +43,6 @@ router.post("/addActor/:role", authAdmin, async (req, res) => {
     res.status(500).send("Something went wrong");
   }
 });
-
 // @route   POST api/admin/getActors
 // @desc    Get Actors
 // @access  Private
@@ -62,7 +59,6 @@ router.get("/getActors", authAdmin, async (req, res) => {
     res.status(500).send("Something went wrong");
   }
 });
-
 // @route   POST api/admin/addMedicine
 // @desc    Add Medicine
 // @access  Private
