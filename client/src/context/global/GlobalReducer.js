@@ -48,6 +48,12 @@ const GlobalReducer = (state, action) => {
       ...state,
       isMobile: true,
     };
+  } else if (action.type === types.SET_LOCATION) {
+    return {
+      ...state,
+      latitude: action.payload.latitude,
+      longitude: action.payload.longitude,
+    };
   } else if (action.type === types.SET_IS_NOT_MOBILE) {
     return {
       ...state,

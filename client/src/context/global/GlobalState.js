@@ -16,6 +16,8 @@ const GlobalState = (props) => {
     alert: null,
     loading: false,
     available: null,
+    latitude: 0,
+    longitude: 0,
   };
 
   const [state, dispatch] = useReducer(GlobalReducer, initialState);
@@ -34,6 +36,16 @@ const GlobalState = (props) => {
 
   const clearLoading = () => {
     dispatch({ type: types.CLEAR_LOADING });
+  };
+
+  const fetchLocation = async () => {
+    try {
+      const res = await axios.get("/api/ambulance/location");
+      console.log("data from location", res.data);
+      dispatch({ type: types.SET_LOCATION, payload: res.data });
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   const getDoctorSchedule = async () => {
@@ -111,6 +123,8 @@ const GlobalState = (props) => {
         alert: state.alert,
         loading: state.loading,
         available: state.available,
+        latitude: state.latitude,
+        longitude: state.longitude,
         getDoctorSchedule,
         getCompounderSchedule,
         getAvailable,
@@ -118,6 +132,7 @@ const GlobalState = (props) => {
         clearAlert,
         setLoading,
         clearLoading,
+        fetchLocation,
       }}
     >
       {props.children}
