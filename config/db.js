@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const config = require('config');
 
-
+mongoose.set('strictQuery', false);
 module.exports = async () => {
     try {
         await mongoose.connect(config.get('mongoURI'));

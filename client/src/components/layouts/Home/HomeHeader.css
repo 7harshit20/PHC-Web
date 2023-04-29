@@ -1,0 +1,48 @@
+/* Define the gradient colors */
+:root {
+    --primary-color: #1b1d32;
+    --secondary-color: #f5d5d9;
+  }
+  
+  /* Apply the gradient background to the navbar */
+  .navbar {
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  }
+  
+  /* Add animation to the navbar links */
+  .nav-link {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Add hover effect to the navbar links */
+  .nav-link:hover {
+    color: var(--primary-color);
+  }
+  
+  /* Set the active link color */
+  .active {
+    color: var(--primary-color);
+  }
+  
+  /* Change the color of the toggler icon */
+  .navbar-toggler-icon {
+    color: var(--secondary-color);
+  }
+  
+  /* Add animation to the toggler icon */
+  .navbar-toggler {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Change the color of the patient sign up button */
+  .btn-primary {
+    background-color: var(--secondary-color);
+    border-color: var(--primary-color);
+  }
+  
+  /* Add hover effect to the patient sign up button */
+  .btn-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  
