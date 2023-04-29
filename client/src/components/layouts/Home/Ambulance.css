@@ -1,0 +1,26 @@
+.Container {
+    display: flex;
+    border: none;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .icon {
+    font-size: 32px;
+    margin-right: 10px;
+  }
+  
+  .link {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
