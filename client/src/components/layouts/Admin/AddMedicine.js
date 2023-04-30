@@ -139,7 +139,7 @@ const AddMedicine = () => {
                     placeholder='Enter Description'
                     name='description'
                     // value={form.description}
-                    value={form.composition?form.composition:""}
+                    value={form.description?form.description:""}
                     onChange={onChange}
                     />
                 </div>

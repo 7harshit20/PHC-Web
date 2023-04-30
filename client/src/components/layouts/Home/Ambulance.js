@@ -111,11 +111,16 @@ const Ambulance = () => {
     // </a>
     // </div>
     <>
-      <nav class='navbar navbar-primary '>
+      <nav class='navbar' style={{backgroundColor:'#E0EEEF'}}>
         <div class='container-fluid'>
-          <a class='navbar-brand' target='_blank' href={url}>
+          <a target='_blank' href={url}>
+          <i class="fa-solid fa-location-dot fa-beat fa-lg mx-3"></i>
             See on Google Maps
           </a>
+          <div style={{alignContent:'end'}}>
+            9425805538
+            <i class="fa-solid fa-phone fa-fade fa-lg mx-2"></i>
+          </div>
         </div>
       </nav>
       <div id='map' style={{ width: "100%", height: "100vh" }}></div>
